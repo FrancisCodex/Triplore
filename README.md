@@ -50,7 +50,7 @@ To run Triplore locally, you need the following tools installed:
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/Triplore.git
+    git clone https://github.com/FrancisCodex/Triplore.git
     ```
 2. Navigate to the folder:
     ```bash
@@ -62,17 +62,11 @@ To run Triplore locally, you need the following tools installed:
     ```
 
 ### Build Production
-    Build the application for production:
+1. Build the application for production:
     ```bash
     npm run build
     ```
+### Personal Project
 
-### Contributions
-    If you want to contribute to Triplore, feel free to open issues or submit pull requests. We welcome contributions to enhance the platform.
-
-### License
-    This project is licensed under the MIT License.
-
-
-    This provides a clear structure for the app, installation steps, and contribution guidelines in the `README.md`. Let me know if you'd like to add more details!
+This is a personal project of mine this was supposed to be a school project but they rejected my idea, I am trying the things I learned and making sure I create applications that can be used by everyone and breaking the Tutorial Hell loop. You can message or email me if you want to contribute. Peace and thank you for taking the time to read and learn about my project thanks.
 
