@@ -18,7 +18,7 @@ export default function ThemeToggle() {
     };
 
     return (
-        <button onClick={toggleTheme} className="p-2 rounded-full" aria-label="Toggle theme">
+        <button onClick={toggleTheme} className=" rounded-full" aria-label="Toggle theme">
             {theme === 'light' ? (
                 <IconMoon className="h-6 w-6 text-neutral-500 dark:text-white" />
             ) : (

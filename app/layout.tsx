@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Sidebar_nav } from "@/components/page_components/sidebar_nav";
 import { ThemeProvider } from "next-themes";
+import { Sidebar_navigation } from "@/components/page_components/sidebar_navigation";
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -26,16 +27,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={''}
-      >
+      {/* <body
+        className={'flex items-start justify-betwee'}
+      > */}
+      <body>
         <ThemeProvider attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange>
-          <Sidebar_nav>
+          {/* <Sidebar_nav/> */}
+          <Sidebar_navigation>
             {children}
-          </Sidebar_nav>
+          </Sidebar_navigation>
+            
         </ThemeProvider>
       </body>
     </html>

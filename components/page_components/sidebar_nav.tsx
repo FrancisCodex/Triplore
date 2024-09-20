@@ -11,6 +11,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ThemeToggle from "./theme-toggle";
 import { Sidebar, SidebarBody, SidebarLink } from "../ui/sidebar";
+import { div } from "framer-motion/client";
 
 interface LinkItem {
     label: string;
@@ -18,7 +19,7 @@ interface LinkItem {
     icon: React.ReactNode;
 }
 
-export function Sidebar_nav({ children }: { children: React.ReactNode }) {
+export function Sidebar_nav() {
     const links: LinkItem[] = [
         {
             label: "Home",
@@ -45,7 +46,7 @@ export function Sidebar_nav({ children }: { children: React.ReactNode }) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="h-screen w-screen flex overflow-hidden bg-gray-100 dark:bg-neutral-900">
+        <div className="h-screen flex flex-col overflow-hidden bg-gray-100 dark:bg-neutral-900">
             <Sidebar open={open} setOpen={setOpen}>
                 <SidebarBody className="flex flex-col h-full justify-between">
                     <div className="flex flex-col flex-1 overflow-y-auto">
@@ -77,14 +78,20 @@ export function Sidebar_nav({ children }: { children: React.ReactNode }) {
                             & Shadcn
                         </div>
                     )}
-                    <ThemeToggle />
+
+                    { open && (
+                        <div className="p-2">
+                            <ThemeToggle />
+                        </div>
+                    )}
+                    { !open && (
+                        <div className="block">
+                            <ThemeToggle />
+                        </div>
+                    )}
                 </SidebarBody>
             </Sidebar>
-            <main className="flex-1 overflow-auto py-2 sm:py-4 md:py-8">
-                <div className="w-full px-2 sm:px-4 md:px-8">
-                    {children}
-                </div>
-            </main>
+            
         </div>
     );
 }
