@@ -1,6 +1,6 @@
 # Triplore
 
-**Triplore** is an AI-powered travel booking platform built using **Next.js**, with a focus on providing seamless and personalized travel experiences. The app leverages advanced UI libraries such as **ShadCN** and **AceternityUI** for a highly responsive and modern user interface. Triplore is designed to cater to frequent travelers, solo adventurers, and travel enthusiasts, offering tailored suggestions, safe travel recommendations, and rich content-sharing features.
+**Triplore** is an AI-powered travel booking platform built using **Next.js**, with a focus on providing seamless and personalized travel experiences. The app leverages advanced UI libraries such as **ShadCN** and **AceternityUI** for a highly responsive and modern user interface. Triplore is designed to cater to frequent travelers, solo adventurers, and travel enthusiasts, offering tailored suggestions, safe travel recommendations, and rich content-sharing features. Using **Gemini AI** for the travel user recommendation.
 
 ## Features
 
@@ -54,7 +54,7 @@ To run Triplore locally, you need the following tools installed:
     ```
 2. Navigate to the folder:
     ```bash
-    cd Triplore
+    cd Triplore-app
     ```
 3. Install the dependencies:
     ```bash
@@ -68,5 +68,5 @@ To run Triplore locally, you need the following tools installed:
     ```
 ### Personal Project
 
-This is a personal project of mine this was supposed to be a school project but they rejected my idea, I am trying the things I learned and making sure I create applications that can be used by everyone and breaking the Tutorial Hell loop. You can message or email me if you want to contribute. Peace and thank you for taking the time to read and learn about my project thanks.
+This is a personal project of mine this was supposed to be a school project but they rejected my idea, I am trying the things I learned and making sure I create applications that can be used by everyone and breaking the Tutorial Hell loop. You can message or email me if you want to contribute. Thank you for taking the time to read and learn about my personal project thanks.
 
